@@ -1,0 +1,22 @@
+safe_mode_gpio=8
+disable_overscan=1
+start_x=1
+gpu_mem=128
+max_usb_current=1
+
+# Berryboot settings, do not change
+initramfs berryboot.img
+
+kernel=kernel_rpi2_aufs.img
+
+[pi1]
+kernel=kernel_rpi_aufs.img
+
+# Warning: CMA does not work properly in newer firmware versions
+#
+#cma_lwm=16
+#cma_hwm=32
+#cma_offline_start=16
+[pi0]
+kernel=kernel_rpi_aufs.img
+
